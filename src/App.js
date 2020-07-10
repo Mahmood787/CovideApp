@@ -4,6 +4,8 @@ import styles from './App.module.css';
 import {fetchData} from './api';
 import {TopBar} from './components/TopBar'
 import {Img} from './components/Img'
+import {Footer} from './components/Footer'
+
 
 class App extends React.Component{
     state = {data:{},
@@ -32,6 +34,8 @@ class App extends React.Component{
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Charts data={data} country={country} />
+                <Footer />
+                
                 
             </div>
         )

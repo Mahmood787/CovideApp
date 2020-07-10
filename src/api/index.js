@@ -13,6 +13,7 @@ export const fetchData =async(country)=>{
     catch (error){
 
     };
+
 }
 export const fetchDailyData = async()=>{
 try {
@@ -32,6 +33,7 @@ try {
 export const Countries = async()=>{
     try {
         const {data:{countries}}= await axios.get('https://covid19.mathdro.id/api/countries')
+        
         return countries.map((country)=> country.name)
     } catch (error) {
         console.log(error)

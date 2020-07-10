@@ -4,7 +4,7 @@ import styles from './main.module.css'
 export const TopBar =()=>{
     return (
         <div className={styles.topbar}>
-            <p>Dial 1166 health helpline</p>
+            <p>Dial 1166 health helpline (for Pakistan)</p>
         </div>
     )
 }
