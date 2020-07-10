@@ -5,7 +5,7 @@ import cronaImg from '../images/cronaImg.jpg'
 export const Img =()=>{
     return (
         <div >
-           <img src={cronaImg} alt="image" />
+           <img src={cronaImg} alt="crona" />
         </div>
     )
 }
