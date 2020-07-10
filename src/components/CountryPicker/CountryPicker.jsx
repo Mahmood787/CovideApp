@@ -3,7 +3,6 @@ import {useState,useEffect} from 'react';
 import {NativeSelect, FormControl} from '@material-ui/core';
 import Styles from './CountryPicker.module.css'
 import {Countries} from '../../api'
-import { findRenderedDOMComponentWithTag } from 'react-dom/test-utils';
 const CountryPicker =({handleCountryChange})=> {
   const [country, setCountry]= useState([]);
   useEffect(()=>{
